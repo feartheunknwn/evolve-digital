@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Automation & Digital Marketing Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="glass-nav">
+        <div class="logo-container">
+            <div class="logo-icon">ED</div>
+            <div class="logo-text">Evolve <span>Digital</span></div>
+        </div>
+        <div class="nav-links">
+            <a href="chatbot-services.html">Chatbot Services</a>
+            <a href="social-media-marketing.html">Social Media & SEO</a>
+            <a href="ai-automation.html">AI Automation</a>
+            <button class="btn-primary" onclick="scrollToAppointment()">Book an Appointment</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text reveal">
+                <span class="eyebrow">REVOLUTIONIZE YOUR BUSINESS</span>
+                <h1>Automate Your <span class="gradient-text">Sales Pipeline.</span></h1>
+                <p>Multiply your client dealings with AI-powered chatbots and intelligent automation.</p>
+                <div class="cta-group">
+                    <div class="email-input-group">
+                        <input type="email" id="estimateEmail" placeholder="Enter your email" required>
+                        <button class="btn-primary" onclick="findEstimate()">Find your Estimate</button>
+                    </div>
+                </div>
+                <p class="welcoming-text">✨ Get your personalized automation strategy in minutes</p>
+            </div>
+            <div class="hero-graphic reveal">
+                <div class="mesh-container">
+                    <div class="mesh-ball"></div>
+                    <div class="grid-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Automation Sales Section -->
+        <section class="automation-section">
+            <div class="section-header reveal">
+                <span class="eyebrow">AI-POWERED SALES MULTIPLICATION</span>
+                <h2>All About AI <span class="gradient-text">Automating Sales</span></h2>
+                <p>Through Intelligent Chatbots & Social Media Marketing</p>
+            </div>
+
+            <div class="automation-content">
+                <div class="video-container reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="hero section.mp4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="automation-text reveal">
+                    <h3>Transform Your Sales Process</h3>
+                    <ul class="benefits-list">
+                        <li>24/7 Automated Customer Engagement</li>
+                        <li>AI-Powered Lead Qualification</li>
+                        <li>Intelligent Response Generation</li>
+                        <li>Social Media Integration</li>
+                        <li>Real-time Analytics & Insights</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="btn-primary btn-large" onclick="openEmailModal()">Automate Your Site</button>
+        </section>
+
+        <!-- Chatbot Methodology Section with Video Background -->
+        <section class="methodology-section" style="position: relative; overflow: hidden;">
+            <video autoplay muted loop playsinline class="bg-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+                <source src="chat bot backgroud.mp4.mp4" type="video/mp4">
+            </video>
+
+            <div class="methodology-overlay" style="position: relative; z-index: 2;">
+                <div class="section-header reveal">
+                    <span class="eyebrow">CHATBOT INTELLIGENCE</span>
+                    <h2>How Chatbots <span class="gradient-text">Multiply Client Dealings</span></h2>
+                </div>
+
+                <div class="methodology-grid">
+                    <div class="method-card reveal">
+                        <div class="method-number">01</div>
+                        <h3>Instant Response</h3>
+                        <p>Provide immediate answers 24/7, reducing response time from hours to seconds.</p>
+                    </div>
+                    <div class="method-card reveal">
+                        <div class="method-number">02</div>
+                        <h3>Lead Nurturing</h3>
+                        <p>Automatically qualify and nurture leads through personalized conversations.</p>
+                    </div>
+                    <div class="method-card reveal">
+                        <div class="method-number">03</div>
+                        <h3>Scale Operations</h3>
+                        <p>Handle unlimited concurrent conversations without increasing headcount.</p>
+                    </div>
+                    <div class="method-card reveal">
+                        <div class="method-number">04</div>
+                        <h3>Data Intelligence</h3>
+                        <p>Gather valuable insights from every interaction to optimize sales strategy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO & Social Media Marketing Section -->
+        <section class="seo-section">
+            <div class="section-header reveal">
+                <span class="eyebrow">DIGITAL PRESENCE MASTERY</span>
+                <h2>SEO & Social Media <span class="gradient-text">Optimization</span></h2>
+                <p>Technical Excellence for Online Dominance</p>
+            </div>
+
+            <div class="seo-grid">
+                <div class="seo-card reveal">
+                    <h3>🔍 Technical SEO</h3>
+                    <ul class="tech-list">
+                        <li><strong>Core Web Vitals:</strong> Optimize LCP, FID, CLS metrics</li>
+                        <li><strong>Schema Markup:</strong> Structured data implementation</li>
+                        <li><strong>XML Sitemaps:</strong> Complete site indexation</li>
+                        <li><strong>Canonical URLs:</strong> Eliminate duplicate content</li>
+                        <li><strong>Mobile-First Indexing:</strong> Responsive design optimization</li>
+                    </ul>
+                </div>
+
+                <div class="seo-card reveal">
+                    <h3>📊 Analytics & Tracking</h3>
+                    <ul class="tech-list">
+                        <li><strong>GA4 Implementation:</strong> Advanced event tracking</li>
+                        <li><strong>Conversion Funnel Analysis:</strong> User journey mapping</li>
+                        <li><strong>UTM Parameters:</strong> Campaign source tracking</li>
+                        <li><strong>Search Console Monitoring:</strong> Query performance analysis</li>
+                        <li><strong>Heatmap Integration:</strong> User behavior visualization</li>
+                    </ul>
+                </div>
+
+                <div class="seo-card reveal">
+                    <h3>📱 Social Media Optimization</h3>
+                    <ul class="tech-list">
+                        <li><strong>Algorithm Optimization:</strong> Platform-specific best practices</li>
+                        <li><strong>Content Calendar Management:</strong> Strategic posting schedule</li>
+                        <li><strong>Engagement Metrics:</strong> CTR & engagement rate optimization</li>
+                        <li><strong>Influencer Collaboration:</strong> Strategic partnerships</li>
+                        <li><strong>Social Listening:</strong> Real-time market intelligence</li>
+                    </ul>
+                </div>
+
+                <div class="seo-card reveal">
+                    <h3>🎯 Conversion Optimization</h3>
+                    <ul class="tech-list">
+                        <li><strong>A/B Testing:</strong> Multivariate testing framework</li>
+                        <li><strong>Landing Page Optimization:</strong> High-converting layouts</li>
+                        <li><strong>CTR Improvement:</strong> Meta description enhancement</li>
+                        <li><strong>Bounce Rate Reduction:</strong> User experience refinement</li>
+                        <li><strong>ROI Maximization:</strong> Cost-per-conversion optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats-grid reveal">
+                <div class="stat">
+                    <h4 class="stat-number">340%</h4>
+                    <p>Average Traffic Increase</p>
+                </div>
+                <div class="stat">
+                    <h4 class="stat-number">85%</h4>
+                    <p>Conversion Rate Improvement</p>
+                </div>
+                <div class="stat">
+                    <h4 class="stat-number">2.5x</h4>
+                    <p>ROI Multiplication</p>
+                </div>
+                <div class="stat">
+                    <h4 class="stat-number">99.8%</h4>
+                    <p>Uptime Guarantee</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="contact-section">
+            <div class="section-header reveal">
+                <span class="eyebrow">READY TO TRANSFORM?</span>
+                <h2>Book Your <span class="gradient-text">Free Consultation</span></h2>
+                <p>Let's discuss how AI automation can revolutionize your business.</p>
+            </div>
+
+            <form class="contact-form reveal" onsubmit="handleContactForm(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us about your business..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Schedule Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Evolve Digital</h4>
+                <p>Transforming businesses through intelligent automation and digital excellence.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;"><strong>Email:</strong> <a href="mailto:saswin506@gmail.com" style="color: var(--blue); text-decoration: none;">saswin506@gmail.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="chatbot-services.html">Chatbot Services</a></li>
+                    <li><a href="social-media-marketing.html">Social Media & SEO</a></li>
+                    <li><a href="ai-automation.html">AI Automation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                    <li><a href="#appointment">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Evolve Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Email Modal -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmailModal()">&times;</span>
+            <h2>Automate Your Site Today</h2>
+            <p>Enter your email to get started with intelligent automation</p>
+            <input type="email" id="automationEmail" placeholder="Enter your email" required>
+            <button class="btn-primary" onclick="submitAutomationEmail()">Get Started</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
