@@ -169,6 +169,11 @@ function scrollTo(selector) {
     }
 }
 
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+}
+
 // ========== Contact Form Handling ==========
 function handleContactForm(event) {
     event.preventDefault();
