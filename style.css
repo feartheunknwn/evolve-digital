@@ -1580,6 +1580,10 @@ h2 {
     .automation-metrics {
         grid-template-columns: 1fr;
     }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
 }
     color: var(--text-muted);
 }
@@ -1699,7 +1703,13 @@ h2 {
     .nav-links {
         width: 100%;
         justify-content: center;
-        gap: 15px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .nav-links .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.8rem;
     }
 
     .hero {
@@ -1736,5 +1746,26 @@ h2 {
 
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .automation-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .automation-section {
+        padding: 60px 5%;
+    }
+
+    .methodology-overlay {
+        padding: 30px;
+    }
+
+    .automation-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .benefits-list li {
+        font-size: 0.9rem;
     }
 }
