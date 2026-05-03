@@ -172,6 +172,41 @@ function scrollTo(selector) {
 function toggleMenu() {
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.toggle('active');
+    
+    // Close menu when a link is clicked (mobile)
+    const navLinks = navMenu.querySelectorAll('a, .btn-primary');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    const nav = document.querySelector('.glass-nav');
+    const navMenu = document.getElementById('nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (nav && !nav.contains(e.target) && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+    }
+});
+
+// ========== Prevent scroll on mobile when menu is open ==========
+const navMenu = document.getElementById('nav-menu');
+if (navMenu) {
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+    
+    observer.observe(navMenu, { attributes: true, attributeFilter: ['class'] });
 }
 
 // ========== Contact Form Handling ==========
